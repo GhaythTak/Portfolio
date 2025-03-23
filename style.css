@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.nav-bar{
+    list-style: none;
+    height: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    background-color:#1A1A1D ;
+}
+.nav-bar li{
+    padding-top: 15px;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar a:hover{
+    color: #B4B4B8;
+}
+
+img{
+    border-radius: 50%;
+    width: 250px;
+    height:250px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #F0F0F0;
+    padding: 50px 50px;
+}
+h1{
+    text-align: center;
+    display: block;
+    width:50%;
+}
+h2{
+    padding-bottom: 40px;
+    text-align: center;
+}
+#about p{
+    text-align: center;
+    display: block;
+    width:75%;
+    font-size: 20px;
+}
+#projects{
+    color: white;
+    background-color: #1A1A1D;
+    padding: 50px
+}
+
+.pro-main{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+   
+}
+.pro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pro p{
+    padding: 20px;
+}
+.pro h4{
+    padding: 20px 0 0 20px
+}
+
+#contact{
+    padding: 50px;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+.fa-brands{
+    font-size: 23px;
+}
