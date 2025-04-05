@@ -42,23 +42,45 @@ img{
     height:250px;
 }
 
-#about{
+#title{
+    height: 400px;
+    background-color: #222831;
+}
+
+.title-description {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    background-color: #F0F0F0;
-    padding: 50px 50px;
+    justify-content: space-evenly;
 }
-h1{
-    text-align: center;
-    display: block;
-    width:50%;
+.title-img{
+    margin-top: 5%;
 }
+
+.title-content{
+    padding-top: 10%;
+    font-size: 1.2rem;
+}
+
+.title-content h1 {
+    color: #FFF;
+    margin-bottom: 10px;
+
+}
+
+.title-content p{
+    color: #00ADB5;
+}
+
+@media only screen and (max-width: 800px) {
+    .title-description {
+        flex-wrap: wrap;    
+    }
+  }
+
 h2{
     padding-bottom: 40px;
     text-align: center;
 }
+
 #about p{
     text-align: center;
     display: block;
@@ -76,7 +98,6 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-   
 }
 .pro{
     display: flex;
