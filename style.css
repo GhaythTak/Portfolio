@@ -3,6 +3,12 @@
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
+.container {
+    min-height: 380px;
+    padding-top: 50px;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -36,20 +42,19 @@ nav p{
     color: #B4B4B8;
 }
 
-img{
+.title-img img{
     border-radius: 50%;
     width: 250px;
     height:250px;
 }
 
 #title{
-    height: 400px;
     background-color: #222831;
 }
 
 .title-description {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .title-img{
     margin-top: 5%;
@@ -58,6 +63,7 @@ img{
 .title-content{
     padding-top: 10%;
     font-size: 1.2rem;
+    width: 450px;
 }
 
 .title-content h1 {
@@ -70,27 +76,42 @@ img{
     color: #00ADB5;
 }
 
-@media only screen and (max-width: 800px) {
-    .title-description {
-        flex-wrap: wrap;    
-    }
-  }
-
-h2{
-    padding-bottom: 40px;
-    text-align: center;
+#about{
+    background-color: #222831;
+    color: #FFF;  
 }
 
-#about p{
-    text-align: center;
-    display: block;
-    width:75%;
-    font-size: 20px;
+.about-me{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
 }
+
+.about-span{
+    color: #00ADB5;
+}
+
+.about-me-description {
+    padding-top: 7%;
+    margin-left:20px;
+}
+
+.about-me p{
+    width: 450px;
+}
+
+.about-pc{
+    position: absolute;
+}
+
 #projects{
     color: white;
     background-color: #1A1A1D;
     padding: 50px
+}
+#projects h2{
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 .pro-main{
@@ -119,4 +140,13 @@ h2{
 }
 .fa-brands{
     font-size: 23px;
+}
+
+@media only screen and (max-width: 800px) {
+    .title-description {
+        flex-wrap: wrap;    
+    }
+    .about-me{
+       flex-wrap: wrap;
+    }
 }
